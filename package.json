@@ -1,0 +1,22 @@
+{
+  "name": "jairforo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jairforo/jairforo.git"
+  },
+  "author": "Jair Foro <jairforo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jairforo/jairforo/issues"
+  },
+  "homepage": "https://github.com/jairforo/jairforo#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
