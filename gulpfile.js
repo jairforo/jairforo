@@ -16,11 +16,13 @@ gulp.task('default', ['copy'], function() {
 });
 
 gulp.task('copy', ['clean'], function() {
+  
 	return gulp.src('src/**/*')
 		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('clean', function() {
+
 	return gulp.src('dist')
 		.pipe(clean());
 });
@@ -34,7 +36,7 @@ gulp.task('build-img', function() {
 
 gulp.task('usemin', function() {
 
-  return gulp.src('dist/**/*.html')
+  return gulp.src('src/**/*.html')
     .pipe(usemin({
       js: [uglify],
       css: [autoprefixer, cssmin]
