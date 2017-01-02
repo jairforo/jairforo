@@ -34,9 +34,8 @@ gulp.task('build-img', function() {
 gulp.task('useref', function() {
     return gulp.src('src/**/*.html')
         .pipe(useref())
-        .pipe(gulpif('src/**/*.js', uglify()))
-        .pipe(gulpif('src/**/*.css', autoprefixer()))
-        .pipe(gulpif('src/**/*.css', cssmin()))
+        .pipe(gulpif('*.js', uglify()))
+        .pipe(gulpif('*.css', autoprefixer(), cssmin()))
         .pipe(gulp.dest('dist'));
 });
 
